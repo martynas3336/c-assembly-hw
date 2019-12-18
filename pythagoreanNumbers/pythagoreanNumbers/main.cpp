@@ -70,7 +70,7 @@ int main() {
 
 			for (int k = 0; k < 4; k++) {
 				if (res[k] == 0) {
-					myfile << sqrt(int(a[k]) << " " << int(b[k]) << " " << int(a[k]) * int(a[k]) + int(b[k]) * int(b[k])) << std::endl;
+					myfile << int(a[k]) << " " << int(b[k]) << " " << sqrt(int(a[k]) * int(a[k]) + int(b[k]) * int(b[k])) << std::endl;
 				}
 			}
 		}
