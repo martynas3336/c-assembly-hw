@@ -9,7 +9,7 @@ int main() {
 	std::ofstream myfile;
 	myfile.open("result.txt");
 
-	for (int i = 1; i <= limit-4-1; i+=1) {
+	for (int i = 0; i <= limit-4-1; i+=4) {
 		for (int j = i + 1; j <= limit-4; j+=1) {
 
 			__declspec(align(16))float a[4];
@@ -70,7 +70,7 @@ int main() {
 
 			for (int k = 0; k < 4; k++) {
 				if (res[k] == 0) {
-					myfile << int(a[k]) << " " << int(b[k]) << " " << int(a[k]) * int(a[k]) + int(b[k]) * int(b[k]) << std::endl;
+					myfile << sqrt(int(a[k]) << " " << int(b[k]) << " " << int(a[k]) * int(a[k]) + int(b[k]) * int(b[k])) << std::endl;
 				}
 			}
 		}
